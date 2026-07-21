@@ -34,7 +34,3 @@ In the GitHub repository settings, configure Pages to deploy from the `main` bra
 ## Product screenshots
 
 Use screenshots from the current extension build only. Remove personal bookmark names, emails, accounts, and private URLs before adding files under `assets/images/`. Keep the same theme and visual treatment across the image set.
-
-## Contact
-
-[adrianomal@gmail.com](mailto:adrianomal@gmail.com)
