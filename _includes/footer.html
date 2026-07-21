@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <a class="brand footer-brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/bookfolio-logo.png' | relative_url }}" width="36" height="36" alt="">
+        <span>BookFolio</span>
+      </a>
+      <p>A clearer way to navigate the web you have already saved.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+      <a href="mailto:{{ site.support_email }}">Contact</a>
+    </nav>
+  </div>
+  <div class="shell footer-meta">
+    <span>© <span data-current-year>2026</span> BookFolio</span>
+    <span>Made for Chrome bookmarks.</span>
+  </div>
+</footer>

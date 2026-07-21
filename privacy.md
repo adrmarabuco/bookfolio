@@ -1,78 +1,88 @@
-<div align="center">
-  <img src="icon128.png" width="96" alt="BookFolio logo" />
-  <h1>BookFolio — Privacy Policy</h1>
-  <p><em>Last updated: July 2026</em></p>
-</div>
-
+---
+layout: default
+title: "Privacy Policy — BookFolio"
+description: "How BookFolio handles Chrome bookmarks, browser permissions, local preferences, and optional Chrome Sync."
+page_class: default
+permalink: /privacy/
 ---
 
-> **Summary:** BookFolio does not collect, transmit, or share any personal data. Everything stays on your device, inside your Chrome profile.
+<section class="page-hero">
+  <div class="shell page-hero-inner">
+    <p class="eyebrow"><span></span> Last updated July 20, 2026</p>
+    <h1>Privacy, in <em>plain language.</em></h1>
+    <p>BookFolio works with the information already stored in your Chrome profile. This page explains what the extension can access, what it stores, and why.</p>
+  </div>
+</section>
 
----
+<div class="prose-shell" markdown="1">
+
+> **In brief:** BookFolio does not require an account and does not use advertising or analytics trackers. It does not operate an external server that receives your bookmarks or browsing history.
 
 ## What BookFolio is
 
-BookFolio — Bookmark Navigator turns the bookmarks already in your Chrome profile into a navigation system: a new tab dashboard, a side panel, omnibox search, and a right-click "Save to BookFolio" menu. It lets you organize bookmarks with colors, folder emoji, named groups, and pinned favorites.
+BookFolio — Visual Bookmark Manager turns the bookmarks already in your Chrome profile into a navigation system: a new-tab dashboard, side-panel access, address-bar search, and a right-click “Save to BookFolio” menu. It also lets you organize bookmarks with colors, folder emoji, named groups, and pinned links.
 
-## Data we do not collect
+## Information BookFolio does not collect
 
-BookFolio does **not** collect, store, transmit, or share:
+BookFolio does not collect or send the following information to a server operated by BookFolio:
 
-- Personal information of any kind
+- Personal information
 - Browsing history or visited URLs
-- Bookmark content or metadata sent to any external server
+- Bookmark content or metadata
 - Analytics, telemetry, or usage statistics
-- Cookies or tracking identifiers
+- Cookies or advertising identifiers
 
-There are no external servers, no accounts, no sign-in, and no network requests made by BookFolio beyond loading favicons from Chrome's own internal cache.
+BookFolio has no account or sign-in system and does not use advertising or analytics trackers.
 
-## Data stored locally
+## Data stored in your Chrome profile
 
-BookFolio stores the following data **exclusively within your Chrome profile** using the browser's built-in `chrome.storage` API. This data never leaves your device unless you use Chrome Sync — in which case it follows Chrome's own sync policy, not BookFolio's.
+BookFolio uses Chrome’s built-in `chrome.storage` API to remember preferences and extension features. Some settings use `storage.sync`, which means Chrome may sync them between browsers when Chrome Sync is enabled in your profile. That synchronization is provided and governed by Google Chrome, not by a BookFolio server.
 
 | What is stored | Storage type | Purpose |
 |---|---|---|
-| Theme, view mode, sidebar state, background type | `storage.sync` | Remember display preferences across sessions |
-| Color labels per bookmark or folder | `storage.sync` | Persist color-coding the user assigns |
-| Emoji icons per folder | `storage.sync` | Persist emoji the user assigns to folders |
-| Pinned bookmark IDs | `storage.sync` | Remember which bookmarks are pinned to the top strip |
-| Bookmark group names and member IDs | `storage.sync` | Persist user-created groups for one-click open-all |
-| Recently visited bookmark IDs | `storage.local` | Show a recents strip — device-specific, never synced |
-| Custom background photo | `storage.local` | Store the user-uploaded image for the new tab background |
-| Onboarding state (welcomed, tips dismissed) | `storage.local` | Avoid showing the welcome modal or tips after dismissal |
-| Panel visibility (Open Tabs, Recently Closed) | `storage.sync` | Remember whether these panels are shown or hidden |
+| Theme, view mode, sidebar state, and background type | `storage.sync` | Remember display preferences |
+| Color labels for bookmarks or folders | `storage.sync` | Keep the color-coding you assign |
+| Emoji icons for folders | `storage.sync` | Keep the emoji you assign |
+| Pinned bookmark IDs | `storage.sync` | Remember pinned shortcuts |
+| Bookmark group names and member IDs | `storage.sync` | Keep user-created groups |
+| Recently visited bookmark IDs | `storage.local` | Show device-specific recent items |
+| Custom background image | `storage.local` | Display your chosen new-tab background |
+| Onboarding state | `storage.local` | Remember completed or dismissed guidance |
+| Panel visibility | `storage.sync` | Remember which optional panels are visible |
 
-## Permissions used
+The bookmarks themselves remain part of Chrome’s native bookmark structure. Chrome may separately sync bookmarks according to your Chrome profile settings and Google’s policies.
+
+## Permissions used {#permissions}
+
+Each permission supports a visible extension feature:
 
 | Permission | Why it is needed |
 |---|---|
-| `bookmarks` | Read, display, add, rename, move, and delete bookmarks at the user's request |
-| `storage` | Save user preferences and customizations locally within Chrome |
-| `tabs` | Read the active tab URL to pre-fill the quick-add form; power the Open Tabs panel and per-domain badge; open multiple bookmarks as background tabs when using "Open all" |
-| `tabGroups` | Respect existing Chrome tab groups when opening or switching tabs from the dashboard |
-| `sessions` | Show the Recently Closed panel and let you restore a closed tab, using Chrome's own local session list |
-| `contextMenus` | Add the "Save to BookFolio" right-click menu for the current page or a link |
-| `sidePanel` | Provide the side panel navigation and search surface |
-| `favicon` | Display website icons next to bookmarks using Chrome's internal favicon cache |
+| `bookmarks` | Display, search, create, rename, move, and delete bookmarks when you request those actions |
+| `storage` | Save extension preferences and customizations in your Chrome profile |
+| `tabs` | Support the Open Tabs panel, active-page actions, the per-site badge, and opening bookmark groups |
+| `tabGroups` | Work with existing Chrome tab groups when opening or switching tabs |
+| `sessions` | Display recently closed tabs and restore one when requested |
+| `contextMenus` | Add the “Save to BookFolio” action to Chrome’s right-click menu |
+| `sidePanel` | Provide bookmark navigation and search in Chrome’s side panel |
+| `favicon` | Display website icons using Chrome’s favicon capability |
 
-## Third-party services
+## External services
 
-BookFolio does not integrate with, send data to, or load resources from any third-party service or analytics provider. **No external network requests are made.**
+BookFolio does not operate an external server that receives your bookmarks or browsing history. Website icons are displayed through Chrome’s favicon capability. Optional Chrome Sync is handled by Chrome according to the settings and policies associated with your browser profile.
 
-## Children's privacy
+## Children’s privacy
 
-BookFolio does not knowingly collect any information from anyone, including children under the age of 13. The extension has no data collection mechanism whatsoever.
+BookFolio is not designed to collect personal information from anyone, including children under 13. It has no BookFolio account system, advertising, or analytics tracker.
 
 ## Changes to this policy
 
-If this policy is updated, the new version will be published at this URL with a revised "Last updated" date. Continued use of the extension after a policy update constitutes acceptance of the updated policy.
+If this policy changes, the revised version will be published at this URL and the “Last updated” date will be changed. Material changes will be reflected in the extension’s privacy disclosures when applicable.
 
 ## Contact
 
-Questions about this privacy policy: **[adrianomal@gmail.com](mailto:adrianomal@gmail.com)**
+Questions about this privacy policy can be sent to [adrianomal@gmail.com](mailto:adrianomal@gmail.com).
 
----
+[View BookFolio in the Chrome Web Store]({{ site.chrome_web_store_url }}) · [Get support]({{ '/support/' | relative_url }})
 
-<div align="center">
-  <sub>BookFolio — Bookmark Navigator · <a href="https://chromewebstore.google.com/detail/bookfolio-%E2%80%94-bookmark-navi/hkjmdpnpkdghjokbimhkdnepholjbfjo">Chrome Web Store</a></sub>
 </div>

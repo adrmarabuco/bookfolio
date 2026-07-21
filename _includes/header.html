@@ -1,0 +1,18 @@
+<header class="site-header" data-site-header>
+  <div class="shell header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="BookFolio home">
+      <img src="{{ '/assets/images/bookfolio-logo.png' | relative_url }}" width="40" height="40" alt="">
+      <span>BookFolio</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
+      <span class="sr-only">Open navigation</span>
+      <span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+    <nav id="site-navigation" class="site-nav" aria-label="Primary navigation" data-site-nav>
+      <a href="{{ '/#features' | relative_url }}">Features</a>
+      <a href="{{ '/#privacy' | relative_url }}">Privacy</a>
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+      <a class="nav-cta" href="{{ site.chrome_web_store_url }}" target="_blank" rel="noopener">Add to Chrome <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>

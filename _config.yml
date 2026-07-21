@@ -1,0 +1,20 @@
+title: "BookFolio — Visual Bookmark Manager"
+description: "Turn existing Chrome bookmarks into a visual new-tab dashboard with folders, groups, side-panel access, search, and keyboard navigation."
+lang: "en"
+url: "https://adrmarabuco.github.io"
+baseurl: "/bookfolio"
+
+markdown: kramdown
+permalink: pretty
+timezone: America/Fortaleza
+
+chrome_web_store_url: "https://chromewebstore.google.com/detail/bookfolio-%E2%80%94-bookmark-navi/hkjmdpnpkdghjokbimhkdnepholjbfjo"
+support_email: "adrianomal@gmail.com"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - handoff-site.md
+  - node_modules
+  - vendor
